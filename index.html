@@ -14,7 +14,7 @@
     <form>
         <div>
             <label for="txtAuthor">Author</label>
-            <input id="txtAuthor" name="author" type="text">
+            <input id="txtAuthor" name="author" type="text" pattern="[A-Za-z]+" title="Please enter only alphabetic characters">
         </div>
         <div>
             <label for="txtTitle">Title</label>
@@ -22,7 +22,7 @@
         </div>
         <div>
             <label for="txtYear">Year</label>
-            <input id="txtYear" name="year" type="text">
+            <input id="txtYear" name="year" type="text" pattern="[0-9]*" title="Please enter only numbers">
         </div>
         <button type="submit">Add</button>
     </form>
