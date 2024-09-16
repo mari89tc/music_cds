@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music CDs | Mandatory Assignment</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Music CDs</h1>
+    </header>
+    <form>
+        <div>
+            <label for="txtAuthor">Author</label>
+            <input id="txtAuthor" name="author" type="text">
+        </div>
+        <div>
+            <label for="txtTitle">Title</label>
+            <input id="txtTitle" name="title" type="text">
+        </div>
+        <div>
+            <label for="txtYear">Year</label>
+            <input id="txtYear" name="year" type="text">
+        </div>
+        <button type="submit">Add</button>
+    </form>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Author</th>
+                    <th>Title</th>
+                    <th>Year</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableOutput">
+            </tbody>
+        </table>
+    </section>
+    <footer><p>&copy; 2024 KEA Development</p></footer>
+</body>
+</html>

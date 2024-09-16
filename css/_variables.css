@@ -1,0 +1,10 @@
+:root {
+    --fontMain: Arial, Helvetica, sans-serif;
+    
+    --marginMain: 1rem;
+    --marginSmall: 0.5rem;
+
+    --primaryColor: #fcf8ea;
+    --secondaryColor: #4a6e79;
+    --tertiaryColor: #60212e;
+}
