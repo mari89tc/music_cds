@@ -11,18 +11,18 @@
     <header>
         <h1>Music CDs</h1>
     </header>
-    <form>
+    <form id="musicForm">
         <div>
             <label for="txtAuthor">Author</label>
-            <input id="txtAuthor" name="author" type="text" pattern="[A-Za-z]+" title="Please enter only alphabetic characters">
+            <input id="txtAuthor" name="author" type="text" pattern="[A-Za-z]+" title="Please enter only alphabetic characters" required>
         </div>
         <div>
             <label for="txtTitle">Title</label>
-            <input id="txtTitle" name="title" type="text">
+            <input id="txtTitle" name="title" type="text" required>
         </div>
         <div>
             <label for="txtYear">Year</label>
-            <input id="txtYear" name="year" type="text" pattern="[0-9]*" title="Please enter only numbers">
+            <input id="txtYear" name="year" type="number" pattern="[0-9]*" title="Please enter only numbers" required>
         </div>
         <button type="submit">Add</button>
     </form>

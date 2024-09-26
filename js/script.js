@@ -1,15 +1,15 @@
 "use strict";
 // Grabs the button and the output table
-const createCD = document.querySelector("button");
+const createCD = document.querySelector("#musicForm");
 const outPutTable = document.querySelector("#tableOutput");
 
-createCD.addEventListener("click", function(e){
-// Makes sure that the window does not reload when the button is clicked
+createCD.addEventListener("submit", function(e){
+// Makes sure that the window does not reload when the button is submitted
     e.preventDefault()
 // Creates a variable, by grabbing the id from the input field and the value from it
-    const txtAuthorOutput = document.getElementById("txtAuthor").value;
-    const txtTitleOutput = document.getElementById("txtTitle").value;
-    const txtYearOutput = document.getElementById("txtYear").value;
+    const txtAuthorOutput = e.target.txtAuthor.value;
+    const txtTitleOutput = e.target.txtTitle.value;
+    const txtYearOutput = e.target.txtYear.value;
 
 // Creates the table output with innerHtml by grabbing the values from the input field
     outPutTable.innerHTML += `
@@ -21,9 +21,7 @@ createCD.addEventListener("click", function(e){
         </tr>
     `;
 // Clear the input field after submission
-    document.getElementById("txtAuthor").value = '';
-    document.getElementById("txtTitle").value = '';
-    document.getElementById("txtYear").value = '';
+    this.reset();
 });
 
 outPutTable.addEventListener("click", (e) => {
